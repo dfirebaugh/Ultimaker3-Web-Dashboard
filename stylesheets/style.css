@@ -7,7 +7,6 @@ body{
   background-image: url('../images/FirstUse-7.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid black;
 }
 #ultimaker-img{
   text-align:center;
@@ -57,4 +56,13 @@ background:#fff;
     height: 30px;
     background-color: white;
     color:black;
+}
+@media only screen and (max-width: 500px) {
+  #printerInfo{
+    width:80%;
+  }
+  #stream{
+    width:80%;
+  }
+
 }
