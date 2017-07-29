@@ -3,12 +3,13 @@ document.addEventListener("DOMContentLoaded", function() {
   var progReq = new XMLHttpRequest();
   var timeReq = new XMLHttpRequest();
   var elapReq = new XMLHttpRequest();
+  // var urls = JSON.parse(data);
 
   var totalSec,elapsedTime;
-  var url = "<your printer's api>";
+  var url = urls.printerApi;
+  var stream = urls.stream;
 
-
-  document.getElementById('stream').src = "<Your printer's api camera stream>"
+  document.getElementById('stream').src = stream;
 
 
 
