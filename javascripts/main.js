@@ -60,7 +60,6 @@
       else{
         document.getElementById('filamentB').innerHTML = 'filamentB: ' + Math.round(data.heads[0].extruders[1].active_material.length_remaining)+"mm";
       }
-      document.getElementById('elapsedTime').innerHTML = "Printer Status:   " + printerStatus
     })
     .catch(function(error) {
       console.log(error);
@@ -89,6 +88,7 @@
     get(URL+'/print_job/time_elapsed')
     .then(function(response){
       var elapTime = secondsToHms(response);
+      console.log(elapTime)
       document.getElementById('elapsedTime').innerHTML = "Elapsed Time: " + elapTime;
     })
     .catch(function(error){
