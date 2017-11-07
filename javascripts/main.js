@@ -88,7 +88,6 @@
     get(URL+'/print_job/time_elapsed')
     .then(function(response){
       var elapTime = secondsToHms(response);
-      console.log(elapTime)
       document.getElementById('elapsedTime').innerHTML = "Elapsed Time: " + elapTime;
     })
     .catch(function(error){
